@@ -94,6 +94,6 @@ void loop() {
  6. Your device is now connected to your access point and available at "BigBang.local"
  7. Restart your Arduino and the device should automatically re-connect to your access point.<br>
 
-Note that the WiFi classes for ESP8266 and ESP32 do not persist hostname, so it must be hard coded into the application. Setting hostname with WiFiPortal will synchronize mDNS with the name that the WiFi class provideds to your local router.
+Note that the WiFi classes for ESP8266 and ESP32 do not persist hostname, so it must be hard coded into the application. Setting hostname with WiFiPortal will synchronize mDNS with the name that the WiFi class provides to your local router.
  
 

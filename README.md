@@ -16,6 +16,9 @@ WiFiPortal requires the additional [CommonUtil library](https://github.com/dltot
 #include <ESP8266mDNS.h>
 #include "WiFiPortal.h"
 
+/**
+ *   Specify the namespace for classes in the WiFiPortal and CommonUtil libraries
+ */
 using namespace lsc;
 
 

@@ -28,6 +28,16 @@ using namespace lsc;
 #define SOFT_AP_PSK  "hotSpot4"
 
 ```
+
+**Portal Instantiation**
+
+Copy construction and deletion are not allowed. WiFiPortal should be declared in global scope above the setup() function of a sketch, and is expected to live over the life of the application. Passing WiFiPortal should be by pointer only.
+
+```
+const char*      hostname = "BigBang";
+WiFiPortal       portal;
+```
+
 **Portal Setup**
 
 Logging messages can be sent to the Serial port by setting the logging level to NONE, WARNING, INFO, FINE, or FINEST. If a *hostname* is set, then the WiFi class will use *hostname* to register with the local router, so mDNS and local router will be consistent. Lastly, set the Soft Access Point ssid and psk. The setup() method also attempts a connection with credentials persisted by the WiFi class (if they exist).
@@ -44,7 +54,8 @@ Logging messages can be sent to the Serial port by setting the logging level to 
   portal.setHostname(hostname);
 
 /**
- *   Initialize WiFiPortal with ssid and psk for the softAP, MUST be called prior to starting the connection sequence.
+ *   Initialize WiFiPortal with ssid and psk for the softAP, MUST be called prior to starting the connection 
+ *   sequence.
  */
   portal.setup(SOFT_AP_SSID,SOFT_AP_PSK);  
 

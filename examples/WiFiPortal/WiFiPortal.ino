@@ -26,7 +26,7 @@ using namespace lsc;
 
 
 #define SOFT_AP_SSID "PortalHotSpot"
-#define SOFT_AP_PSK  "portaltest"
+#define SOFT_AP_PSK  "hotSpot4"
 
 #ifdef ESP8266
 #include <ESP8266WiFi.h>

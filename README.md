@@ -19,7 +19,7 @@ An example sketch with WiFiPortal can be found in [examples/WiFiPortal](). The i
 
 **Namespace Declaration**
 
-The namespace *lsc* is used for WiFiPortal and all other libraries [ssdp](), [UPnPDevice](), [DeviceLib](), and [CommonUtil](). Also, the captive portal runs on an access point provided by the WiFi class, for both ESP32 and ESP8266; SSID and PSK are provided.
+The namespace *lsc* is used for WiFiPortal and all other libraries [ssdp](https://github.com/dltoth/ssdp/), [UPnPDevice](https://github.com/dltoth/UPnPDevice/), [DeviceLib](https://github.com/dltoth/DeviceLib/), and [CommonUtil](https://github.com/dltoth/CommonUtil/). Also, the captive portal runs on an access point provided by the WiFi class, for both ESP32 and ESP8266; SSID and PSK are provided.
 
 ```
 using namespace lsc;

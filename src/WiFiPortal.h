@@ -49,6 +49,9 @@ namespace lsc {
 #define CANCEL_SIZE 100
 #define TIMEOUT     20000
 
+/**
+ *  Connection state
+ */
 typedef enum ConnectionState {
   CNX_DISCONNECTED,
   CNX_FINISHED,
